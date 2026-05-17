@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 15px;
+    height: 100vh;           /* Добавлено: задаём высоту для body */
+    overflow: hidden;        /* Добавлено: убираем глобальную прокрутку */
+}
+
+.sidebar {
+    width: 250px;
+    background: #1A1625;
+    height: 100vh;
+    padding: 20px 0;
+    position: fixed;
+    overflow-y: auto;        /* Добавлено: включаем вертикальную прокрутку для панели */
+    top: 0;
+    left: 0;
+}
+
+/* Стилизация скроллбара для боковой панели (опционально, для красоты) */
+.sidebar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: #2D283E;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #47367f;
+    border-radius: 10px;
+}
+
+.logo-aside {
+    position: relative;
+    width: 200px;
+    left: 22px;
+    margin: 0 0 20px 0;
+}
+
+aside nav ul {
+    list-style: none;
+    position: relative;
+}
+
+aside nav ul li {
+    margin-bottom: 5px;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+aside nav ul li a {
+    text-decoration: none;
+    color: #C7C3E1;
+    background: #2D283E;
+    display: block;
+    padding: 12px 25px;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.subsection {
+    margin-right: 50px;
+    margin-left: 12px;
+}
+
+.subsection__link {
+    font-size: 12px;
+    text-align: left;
+}
+
+aside nav ul li a:hover {
+    background-color: #4a4559;
+}
+
+.sidebar__active-link {
+    background-color: #47367f;
+}
+
+aside nav ul li a:active {
+    background-color: #47367f;
+}
+
+main {
+    margin-left: 250px;
+    background-color: #0B0E14;
+    position: relative;
+    height: 100vh;           /* Добавлено: высота на весь экран */
+    overflow-y: auto;        /* Добавлено: включаем вертикальную прокрутку для содержимого */
+}
+
+/* Стилизация скроллбара для основной области (опционально) */
+main::-webkit-scrollbar {
+    width: 8px;
+}
+
+main::-webkit-scrollbar-track {
+    background: #1A1625;
+}
+
+main::-webkit-scrollbar-thumb {
+    background: #47367f;
+    border-radius: 10px;
+}
+
+.container {
+    margin: 0 150px 0 100px;
+    padding-bottom: 100px;
+    padding-top: 0;
+}
+
+.container__1 {
+    margin: 0 150px 0 50px;
+}
+
+.title__container {
+    margin-top: 0;
+    padding-top: 100px;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.info__container {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.title__container__mini {
+    margin-top: 0;
+    padding-top: 50px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.list {
+    margin-left: 30px;
+}
+
+#list__mini {
+    margin-left: 30px;
+}
+
+#about_project {
+    display: block;
+    text-align: center;
+    color: #3D5AFA;
+    margin-top: 50px;
+    text-decoration: none;
+}

@@ -3,26 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sectoin 3</title>
-    <link rel="stylesheet" href="CSS/style-section3.css">
+    <title>Pixel | Двухфакторная аутентификация</title>
+    <link rel="stylesheet" href="CSS/style-section.css">
     <link rel="shortcut icon" href="IMG/favicon.svg" type="image/x-icon">
 </head>
 <body>
     <aside class="sidebar">
-        <h2 >Меню</h2>
         <nav>
+            <img src="IMG/logo-aside.svg" class="logo-aside">
             <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="section1.html">Раздел 1</a></li>
-                <li><a href="section2.html">Раздел 2</a></li>
-                <li><a href="section3.html" class="sidebar__active-link">Раздел 3</a></li>
-                <li><a href="section4.html">Раздел 4</a></li>
+                <li><a href="index.html"><b>Главная</b></a></li>
+                <li><a href="section1.html">Основы безопасности</a></li>
+                <li><a href="section2.html">Пароли и доступ</a></li>
+                <li><a href="section3.html" class="sidebar__active-link">Двухфакторная аутентификация</a></li>
+                <li class="subsection"><a href="section3.1.html" class="subsection__link">2FA в Instagram</a></li>
+                <li class="subsection"><a href="section3.2.html" class="subsection__link">2FA в VK</a></li>
+                <li class="subsection"><a href="section3.3.html" class="subsection__link">2FA в Telegram</a></li>
+                <li><a href="section4.html">Мошенничество и фишинг</a></li>
+                <li><a href="section5.html">Приватность</a></li>
+                <li><a href="">Устройства и безопасность</a></li>
+                <li><a href="">Если аккаунт взломали</a></li>
+                <li><a href="">Частые ошибки</a></li>
+                <li><a href="">Чек-листы</a></li>
+                <li><a href="">Тест</a></li>
+                <li><a href="">Заключение</a></li>
+                <a href="#" id="about_project">О проекте</a>
             </ul>
-            <img src="IMG/logo.svg" class="logo">
         </nav>
     </aside>
     <main>
-        <h1 class="main__container">ТЕКСТ 3</h1>
+        <div class="container">
+            <h2 class="title__container">Что такое 2FA и зачем она нужна</h2>
+            <p class="info__container">Двухфакторная аутентификация (2FA) — это дополнительный способ защиты аккаунта. Помимо логина и пароля, пользователь должен подтвердить вход с помощью одноразового кода, который приходит по SMS, в приложении-аутентификаторе или на другое устройство.
+            Даже если злоумышленник узнает пароль, он не сможет войти в аккаунт без второго фактора подтверждения.
+            </p>
+            <div class="container__1">
+                <h2 class="title__container__mini">Преимущества 2FA:</h2>
+                <p class="info__container">•	дополнительная защита аккаунта;<br>
+                •	снижение риска взлома;<br>
+                •	защита при утечке пароля;<br>
+                •	уведомления о подозрительных входах.<br><br>
+                Использование двухфакторной аутентификации особенно важно для социальных сетей, электронной почты и сервисов с личными данными.
+                </p>
+            </div>
+            <h2 class="title__container">Как включить 2FA</h2>
+            <p class="info__container">В большинстве социальных сетей настройка двухфакторной аутентификации находится в разделе «Безопасность» или «Конфиденциальность».</p>
+            <div class="container__1">
+                <h2 class="title__container__mini">Общий порядок подключения:</h2>
+                <ol class="info__container list">
+                    <li>Открыть настройки аккаунта.</li>
+                    <li>Перейти в раздел безопасности.</li>
+                    <li>Выбрать пункт «Двухфакторная аутентификация».</li>
+                    <li>Выбрать способ подтверждения:
+                        <ul id="list__mini">
+                            <li>SMS-код;</li>
+                            <li>приложение-аутентификатор;</li>
+                            <li>резервные коды.</li>
+                        </ul>
+                    </li>
+                    <li>Подтвердить подключение.</li>
+                </ol><br>
+                <P class="info__container">После включения 2FA при входе в аккаунт потребуется дополнительный код подтверждения.</P>
+            </div>
+        </div>
     </main>
 </body>
 </html>
