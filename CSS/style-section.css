@@ -157,3 +157,10 @@ main::-webkit-scrollbar-thumb {
     margin-top: 50px;
     text-decoration: none;
 }
+
+.logo__main {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
