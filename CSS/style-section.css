@@ -164,3 +164,30 @@ main::-webkit-scrollbar-thumb {
     margin-top: 20px;
     margin-bottom: 50px;
 }
+
+.button-quiz-link{
+    text-decoration: none;
+    color: #C7C3E1;
+    display: block;
+    padding: 12px 25px;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    font-size: 20px;
+}
+
+.button-quiz {
+    border-radius: 20px;
+    background-color: #47367f;
+    width: 300px;
+    border: none;
+}
+
+.button-quiz:hover {
+    background-color: #4a4559;
+    font-size: 22px;
+}
+
+.button-quiz-link:hover {
+    transform: scale(1.1);
+}

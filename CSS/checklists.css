@@ -1,0 +1,142 @@
+.page-header {
+    margin-bottom: 60px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 35px;
+    padding-bottom: 100px;
+}
+
+.checklist-card {
+    background: #1A1625;
+    border: 1px solid #2D283E;
+    border-radius: 28px;
+    padding: 35px;
+    transition: 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.checklist-card:hover {
+    transform: translateY(-5px);
+    border-color: #5d47a8;
+    box-shadow: 0 0 30px rgba(93, 71, 168, 0.2);
+}
+
+.card-top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.card-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #47367f, #7d5cff);
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    flex-shrink: 0;
+}
+
+.card-top h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.card-top p {
+    color: #A9A4C7;
+    line-height: 24px;
+}
+
+.checklist-items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.check-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #2D283E;
+    padding: 18px 20px;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.check-item:hover {
+    background: #3b3450;
+    transform: translateX(5px);
+}
+
+.check-item.completed {
+    background: rgba(87, 255, 152, 0.12);
+    border-color: #57ff98;
+}
+
+.check-item.completed span {
+    color: #57ff98;
+}
+
+.check-item input {
+    width: 20px;
+    height: 20px;
+    accent-color: #57ff98;
+    cursor: pointer;
+}
+
+.check-item span {
+    line-height: 26px;
+    transition: 0.3s;
+}
+
+@media (max-width: 1200px) {
+
+    .container {
+        margin: 0 60px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    .container {
+        margin: 0 20px;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .checklist-card {
+        padding: 25px;
+    }
+
+    .card-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card-top h2 {
+        font-size: 22px;
+    }
+
+}

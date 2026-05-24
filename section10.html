@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel | Тест</title>
+
+    <link rel="stylesheet" href="CSS/style-section.css">
+    <link rel="stylesheet" href="CSS/test.css">
+
+    <link rel="shortcut icon" href="IMG/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <nav>
+
+            <img src="IMG/logo-aside.svg" class="logo-aside">
+
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+
+                <li><a href="section1.html">Основы безопасности</a></li>
+                <li><a href="section2.html">Пароли и доступ</a></li>
+                <li><a href="section3.html">Двухфакторная аутентификация</a></li>
+                <li><a href="section4.html">Мошенничество и фишинг</a></li>
+                <li><a href="section5.html">Приватность</a></li>
+                <li><a href="section6.html">Устройства и безопасность</a></li>
+                <li><a href="section7.html">Если аккаунт взломали</a></li>
+                <li><a href="section8.html">Частые ошибки</a></li>
+                <li><a href="section9.html">Чек-листы</a></li>
+                <li><a href="section10.html" class="sidebar__active-link">Тест</a></li>
+                <li><a href="section11.html">Заключение</a></li>
+                <a href="#" id="about_project">О проекте</a>
+            </ul>
+
+        </nav>
+    </aside>
+
+    <main>
+
+        <div class="container">
+
+            <div class="quiz-header">
+
+                <h1 class="title__container">
+                    Тест на безопасность аккаунта
+                </h1>
+
+                <p class="info__container">
+                    Пройдите тест и узнайте,
+                    насколько хорошо вы защищаете свои аккаунты
+                    в социальных сетях.
+                </p>
+
+            </div>
+
+            <div class="progress-wrapper">
+
+                <div class="progress-info">
+                    <span>Прогресс теста</span>
+                    <span id="progressText">0 / 10</span>
+                </div>
+
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+
+            </div>
+
+            <form id="quizForm">
+
+                <!-- ВОПРОС 1 -->
+                <div class="question-card">
+
+                    <div class="question-number">
+                        Вопрос 1
+                    </div>
+
+                    <h3>
+                        Что считается надёжным паролем?
+                    </h3>
+
+                    <div class="answers">
+
+                        <label class="answer-option">
+                            <input type="radio" name="q1" value="0">
+                            <span>12345678</span>
+                        </label>
+
+                        <label class="answer-option">
+                            <input type="radio" name="q1" value="0">
+                            <span>дата рождения</span>
+                        </label>
+
+                        <label class="answer-option">
+                            <input type="radio" name="q1" value="1">
+                            <span>сложная комбинация букв, цифр и символов</span>
+                        </label>
+
+                        <label class="answer-option">
+                            <input type="radio" name="q1" value="0">
+                            <span>имя пользователя</span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <!-- ВОПРОС 2 -->
+                <div class="question-card">
+
+                    <div class="question-number">
+                        Вопрос 2
+                    </div>
+
+                    <h3>
+                        Можно ли использовать один пароль для разных сайтов?
+                    </h3>
+
+                    <div class="answers">
+
+                        <label class="answer-option">
+                            <input type="radio" name="q2" value="0">
+                            <span>да, это удобно</span>
+                        </label>
+
+                        <label class="answer-option">
+                            <input type="radio" name="q2" value="1">
+                            <span>нет, это повышает риск взлома</span>
+                        </label>
+
+                        <label class="answer-option">
+                            <input type="radio" name="q2" value="0">
+                            <span>можно только для социальных сетей</span>
+                        </label>
+
+                        <label class="answer-option">
+                            <input type="radio" name="q2" value="0">
+                            <span>можно, если пароль длинный</span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <!-- ВОПРОС 3 -->
+                <div class="question-card">
+
+                    <div class="question-number">
+                        Вопрос 3
+                    </div>
+
+                    <h3>
+                        Что такое двухфакторная аутентификация (2FA)?
+                    </h3>
+
+                    <div class="answers">
+
+                        <label class="answer-option">
+                            <input type="radio" name="q3" value="0">
+                            <span>резервное копирование данных</span>
+                        </label>
+
+                        <label class="answer-option">
+                            <input type="radio" name="q3" value="1">
+                            <span>дополнительная защита аккаунта с помощью кода подтверждения</span>
+                        </label>
+
+                        <label class="answer-option">
+                            <input type="radio" name="q3" value="0">
+                            <span>автоматическая смена пароля</span>
+                        </label>
+
+                        <label class="answer-option">
+                            <input type="radio" name="q3" value="0">
+                            <span>скрытие профиля от других пользователей</span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <!-- ВОПРОС 4 -->
+                <div class="question-card">
+
+                    <div class="question-number">
+                        Вопрос 4
+                    </div>
+
+                    <h3>
+                        Что делать, если пришло сообщение «Это ты на фото?» со ссылкой?
+                    </h3>
+
+                    <div class="answers">
+
+                        <label class="answer-option">
+                            <input type="radio" name="q4" value="0">
+                            <span>сразу открыть ссылку</span>
+                        </label>
+
+                        <label class="answer-option">
+                            <input type="radio" name="q4" value="0">
+                            <span>скачать файл</span>
+                        </label>
+
+                        <label class="answer-option">
+                            <input type="radio" name="q4" value="1">
+                            <span>проверить отправителя и не переходить по подозрительной ссылке</span>
+                        </label>
+
+                        <label class="answer-option">
+                            <input type="radio" name="q4" value="0">
+                            <span>переслать сообщение друзьям</span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <!-- ВОПРОС 5 -->
+                <div class="question-card">
+
+                    <div class="question-number">
+                        Вопрос 5
+                    </div>
+
+                    <h3>
+                        Можно ли сообщать код подтверждения из SMS другим людям?
+                    </h3>
+
+                    <div class="answers">
+
+                        <label class="answer-option">
+                            <input type="radio" name="q5" value="0">
+                            <span>можно друзьям</span>
+                        </label>
+
+                        <label class="answer-option">
+                            <input type="radio" name="q5" value="0">
+                            <span>можно сотрудникам поддержки</span>
+                        </label>
+
+                        <label class="answer-option">
+                            <input type="radio" name="q5" value="1">
+                            <span>нельзя никому</span>
+                        </label>
+
+                        <label class="answer-option">
+                            <input type="radio" name="q5" value="0">
+                            <span>можно, если человек знакомый</span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <!-- ВОПРОС 6 -->
+                <div class="question-card">
+
+                    <div class="question-number">
+                        Вопрос 6
+                    </div>
+
+                    <h3>
+                        Для чего нужны настройки приватности?
+                    </h3>
+
+                    <div class="answers">
+
+                        <label class="answer-option">
+                            <input type="radio" name="q6" value="0">
+                            <span>только для оформления профиля</span>
+                        </label>
+
+                        <label class="answer-option">
+                            <input type="radio" name="q6" value="1">
+                            <span>для ограничения доступа к личной информации</span>
+                        </label>
+
+                        <label class="answer-option">
+                            <input type="radio" name="q6" value="0">
+                            <span>для ускорения работы приложения</span>
+                        </label>
+
+                        <label class="answer-option">
+                            <input type="radio" name="q6" value="0">
+                            <span>для увеличения количества подписчиков</span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <!-- ВОПРОС 7 -->
+                <div class="question-card">
+
+                    <div class="question-number">
+                        Вопрос 7
+                    </div>
+
+                    <h3>
+                        Чем опасны открытые профили?
+                    </h3>
+
+                    <div class="answers">
+
+                        <label class="answer-option">
+                            <input type="radio" name="q7" value="0">
+                            <span>ничем не опасны</span>
+                        </label>
+
+                        <label class="answer-option">
+                            <input type="radio" name="q7" value="1">
+                            <span>злоумышленники могут собирать личную информацию</span>
+                        </label>
+
+                        <label class="answer-option">
+                            <input type="radio" name="q7" value="0">
+                            <span>уменьшается скорость интернета</span>
+                        </label>
+
+                        <label class="answer-option">
+                            <input type="radio" name="q7" value="0">
+                            <span>невозможно получать сообщения</span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <!-- ВОПРОС 8 -->
+                <div class="question-card">
+
+                    <div class="question-number">
+                        Вопрос 8
+                    </div>
+
+                    <h3>
+                        Почему важно обновлять приложения?
+                    </h3>
+
+                    <div class="answers">
+
+                        <label class="answer-option">
+                            <input type="radio" name="q8" value="0">
+                            <span>только ради нового дизайна</span>
+                        </label>
+
+                        <label class="answer-option">
+                            <input type="radio" name="q8" value="1">
+                            <span>обновления устраняют уязвимости безопасности</span>
+                        </label>
+
+                        <label class="answer-option">
+                            <input type="radio" name="q8" value="0">
+                            <span>это влияет только на скорость работы</span>
+                        </label>
+
+                        <label class="answer-option">
+                            <input type="radio" name="q8" value="0">
+                            <span>обновления не нужны</span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <!-- ВОПРОС 9 -->
+                <div class="question-card">
+
+                    <div class="question-number">
+                        Вопрос 9
+                    </div>
+
+                    <h3>
+                        Что нужно сделать после подозрения на взлом аккаунта?
+                    </h3>
+
+                    <div class="answers">
+
+                        <label class="answer-option">
+                            <input type="radio" name="q9" value="0">
+                            <span>ничего не делать</span>
+                        </label>
+
+                        <label class="answer-option">
+                            <input type="radio" name="q9" value="1">
+                            <span>сменить пароль и завершить активные сеансы</span>
+                        </label>
+
+                        <label class="answer-option">
+                            <input type="radio" name="q9" value="0">
+                            <span>удалить приложение</span>
+                        </label>
+
+                        <label class="answer-option">
+                            <input type="radio" name="q9" value="0">
+                            <span>создать новый аккаунт</span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <!-- ВОПРОС 10 -->
+                <div class="question-card">
+
+                    <div class="question-number">
+                        Вопрос 10
+                    </div>
+
+                    <h3>
+                        Какой способ входа наиболее безопасен?
+                    </h3>
+
+                    <div class="answers">
+
+                        <label class="answer-option">
+                            <input type="radio" name="q10" value="0">
+                            <span>простой пароль без 2FA</span>
+                        </label>
+
+                        <label class="answer-option">
+                            <input type="radio" name="q10" value="0">
+                            <span>одинаковый пароль для всех сервисов</span>
+                        </label>
+
+                        <label class="answer-option">
+                            <input type="radio" name="q10" value="1">
+                            <span>уникальный пароль и включённая 2FA</span>
+                        </label>
+
+                        <label class="answer-option">
+                            <input type="radio" name="q10" value="0">
+                            <span>вход через чужое устройство</span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <button type="button" id="submitBtn">
+                    Завершить тест
+                </button>
+
+            </form>
+
+            <div id="resultBox" class="result-box"></div>
+
+        </div>
+
+        <div class="logo__container">
+            <img src="IMG/logo.svg" class="logo__main">
+        </div>
+
+    </main>
+
+    <script src="Script/test.js"></script>
+
+</body>
+</html>
